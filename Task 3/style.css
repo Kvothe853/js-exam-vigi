@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /* Mobile first */
@@ -58,4 +58,40 @@
   padding: 30px;
   border-radius: 5px;
   background-color: #fff;
+}
+
+#output {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#output .avatarCard {
+  width: 30%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.avatarCard p {
+  text-align: center;
+  font-size: 1.8em;
+  padding: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .avatarCard p {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .avatarCard p {
+    font-size: 0.8em;
+  }
 }
